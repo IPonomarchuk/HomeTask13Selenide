@@ -18,7 +18,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class BaseTest {
 
-    // Instances of WebDriver and WebDriverWait
+    // Instance of WebDriver
     private WebDriver driver;
 
     // Logger
@@ -32,6 +32,7 @@ public class BaseTest {
 
     /** Constructor */
     public BaseTest() {
+
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("disable-infobars");
@@ -58,11 +59,6 @@ public class BaseTest {
     public HomePage openSite() {
         getDriver().get(YamlParser.getYamlData().getUrl());
         return new HomePage(this);
-    }
-
-    /** Close site with driver.quit() */
-    public void closeSite() {
-        getDriver().quit();
     }
 
     /**

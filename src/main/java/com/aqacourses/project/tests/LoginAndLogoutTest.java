@@ -39,9 +39,5 @@ public class LoginAndLogoutTest extends BaseTest {
         // Verify LoginPage after logout
         loginPageAfterLogout.verifyLoginPage();
         log("Verified LoginPage after logout");
-
-        // Close site
-        closeSite();
-        log("Closed site");
     }
 }

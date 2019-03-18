@@ -58,9 +58,5 @@ public class ShoppingCartTest extends BaseTest {
         // Delete product and verify that message is displayed
         shoppingCartPage.deleteProduct();
         log("Deleted product and verified that message is displayed");
-
-        // Close site
-        closeSite();
-        log("Closed site");
     }
 }

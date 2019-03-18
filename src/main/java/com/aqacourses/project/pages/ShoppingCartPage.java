@@ -4,8 +4,6 @@ import static com.codeborne.selenide.Selenide.$;
 
 import com.aqacourses.project.base.BaseTest;
 import java.math.BigDecimal;
-
-import com.codeborne.selenide.Condition;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

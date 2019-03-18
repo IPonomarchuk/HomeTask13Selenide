@@ -46,7 +46,6 @@ public class DressesPage extends AbstractPage {
     public void chooseWhiteDresses() {
         testClass.waitTillElementIsVisible(whiteCheckBox);
         $(whiteCheckBox).click();
-        //testClass.waitTillElementIsVisible(whiteColorFilter);
         $(whiteColorFilter).is(Condition.visible);
     }
 

@@ -46,9 +46,5 @@ public class CompareQuantityOfProductsTest extends BaseTest {
         // Verify that quantity of products on the page is the same as in the message
         summerDressesPage.verifyQuantityOfProducts();
         log("Verified that quantity of products on the page is the same as in the message");
-
-        // Close site
-        closeSite();
-        log("Closed site");
     }
 }
