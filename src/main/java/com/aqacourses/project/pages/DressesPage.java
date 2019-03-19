@@ -4,7 +4,6 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 import com.aqacourses.project.base.BaseTest;
-import com.codeborne.selenide.Condition;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -46,7 +45,7 @@ public class DressesPage extends AbstractPage {
     public void chooseWhiteDresses() {
         testClass.waitTillElementIsVisible(whiteCheckBox);
         $(whiteCheckBox).click();
-        $(whiteColorFilter).is(Condition.visible);
+        testClass.waitTillElementIsVisible(whiteColorFilter);
     }
 
     /** Verify that quantity of products on the page is the same as in the message */
